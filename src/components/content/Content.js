@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container } from "@material-ui/core";
+import { Typography, Container, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import Resume from "../../settings/resume.json";
@@ -26,16 +26,19 @@ const useStyles = makeStyles((theme) => ({
 
 export const Content = () => {
   const classes = useStyles();
+  const isMobile = useMediaQuery('(max-width:768px)');
+
+  const fullName = isMobile ? `${FirstName}. . . ${LastName}` : `${FirstName} ${LastName}`;
 
   return (
     <Container component="main" className={classes.main} maxWidth="md">
       <div className={classes.heading}>
         <Typography variant="h5" component="h2">
-            <TextDecrypt text={`${FirstName} ${LastName}`} />
+          <TextDecrypt text={fullName} />
         </Typography>
         <Typography variant="h1" component="h1" className={classes.jobs}>
-            <TextDecrypt text={`${Resume.basics.job1} + `} />
-            <TextDecrypt text={`${Resume.basics.job2}`} />
+          <TextDecrypt text={`${Resume.basics.job1} + `} />
+          <TextDecrypt text={`${Resume.basics.job2}`} />
         </Typography>
       </div>
     </Container>

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const About = () => {
   const classes = useStyles();
-  const greetings = "Hello there!";
+  const greetings = "नमस्ते !";
   const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
                   designer & developer. I'm always down for something new and challenging!
                   I'm here to help you create beautifully formatted websites. 
