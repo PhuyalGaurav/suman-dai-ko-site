@@ -37,6 +37,8 @@
     margin-right: 3rem;
   }
   ._img {
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
     margin: 2em;
   }
   ._content_wrapper {
@@ -51,9 +53,63 @@
   }
   ._img {
     width: 15em;
-    height: 12em;
+    height: 15em; /* Make the height consistent with the width */
+    border: 5px solid #04104d; /* Add a consistent border */
   }
   ._content_wrapper {
     width: 15em;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+._img {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Adjust the size as needed */
+  background: url("../../assets/profile.png") center center no-repeat;
+  background-size: cover; /* Ensure the image covers the container */
+  border: 0px solid #04104d; /* Add a consistent border */
+  border-radius: 50%; /* Make it circular */
+  margin-bottom: 1em; /* Add some space below the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+._img:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+._content_wrapper {
+  text-align: center;
+}
+
+.greetings {
+  margin-bottom: 1em; /* Add some space below the greeting */
+}
+
+.aboutme {
+  margin: 1em 0;
+  font-size: 1.7em; /* Increase the font size */
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 1em;
+}
+
+.contact-btn i {
+  margin-right: 0.5em;
+}
+@media (max-width: 768px) {
+  .aboutme {
+    font-size: 1.1em; /* Decrease the font size for mobile */
   }
 }
