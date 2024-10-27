@@ -69,8 +69,8 @@
 }
 
 ._img {
-  width: 300px; /* Adjust the size as needed */
-  height: 300px; /* Adjust the size as needed */
+  width: 280px; /* Adjust the size as needed */
+  height: 280px; /* Adjust the size as needed */
   background: url("../../assets/profile.png") center center no-repeat;
   background-size: cover; /* Ensure the image covers the container */
   border: 0px solid #04104d; /* Add a consistent border */

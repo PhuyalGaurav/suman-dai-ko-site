@@ -30,7 +30,7 @@ export const SideNavbar = () => {
         onClick={() => setActiveNav("#works")}
         className={activeNav === "#works" ? "active" : ""}
       >
-        <Typography>Projects</Typography>
+        <Typography>Works</Typography>
       </a>
       <a
         href="#contact"

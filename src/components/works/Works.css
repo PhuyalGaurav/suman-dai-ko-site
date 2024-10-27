@@ -31,12 +31,12 @@
   border: 1px solid rgba(255, 255, 255, 0.51);
 }
 .title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0;
 }
 .description {
   font-size: 1rem;
-  width: 60%;
+  width: 80%;
 }
 @media (max-width: 1024px) {
   .project {
@@ -49,8 +49,8 @@
 }
 @media (max-width: 768px) {
   .project {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
     flex-direction: column;
   }
   .__img_wrapper {
@@ -58,5 +58,19 @@
   }
   .__content_wrapper {
     width: 70%;
+  }
+  .description {
+    font-size: 1em; /* Default font size for mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  .title::after {
+    content: "";
+    display: block;
+  }
+
+  .description {
+    font-size: 2em; /* Increase the font size for PC */
   }
 }
