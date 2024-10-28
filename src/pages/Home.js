@@ -37,7 +37,6 @@ export const Home = () => {
         <Hidden mdUp>
           <SpeedDials />
         </Hidden>
-        <Resume />
       </div>
       <SideNavbar />
       <About />
